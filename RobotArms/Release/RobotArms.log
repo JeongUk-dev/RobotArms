@@ -1,0 +1,673 @@
+﻿빌드 시작: 2014-06-30 오전 10:51:57
+     1>2 노드의 "C:\Users\JeongUk\Desktop\RobotArms_0515 (2)\RobotArms\RobotArms.vcxproj" 프로젝트(build 대상)입니다.
+     1>InitializeBuildStatus:
+         "Release\RobotArms.unsuccessfulbuild"에 연결(touching)하고 있습니다.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D _WINDOWS /D NDEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Release\RobotArms.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D _WINDOWS /D NDEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Release\RobotArms.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt GrapTouchPen.cpp MyButton.cpp MyComm.cpp MyInverseKinematic.cpp RevisionPageOne.cpp RevisionPageThree.cpp RevisionPageTwo.cpp RobotArms.cpp RobotArmsDlg.cpp serialcomdlg.CPP SettingPageOne.cpp SettingPageThree.cpp SettingPageTwo.cpp
+         GrapTouchPen.cpp
+     1>GrapTouchPen.cpp(49): error C2664: 'void ATL::CStringT<BaseType,StringTraits>::Format(const wchar_t *,...)' : 매개 변수 1을(를) 'const char [3]'에서 'const wchar_t *'(으)로 변환할 수 없습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+     1>GrapTouchPen.cpp(51): error C2440: '초기화 중' : 'const char [4]'에서 'ATL::CStringT<BaseType,StringTraits>'(으)로 변환할 수 없습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 class 'ATL::CStringT<BaseType,StringTraits>'의 생성자가 'explicit'으로 선언되었습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+     1>GrapTouchPen.cpp(52): error C2593: 'operator +='이(가) 모호합니다.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\atlmfc\include\cstringt.h(1311): 'ATL::CStringT<BaseType,StringTraits> &ATL::CStringT<BaseType,StringTraits>::operator +=(const char *)'일 수 있습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\atlmfc\include\cstringt.h(1296): 또는       'ATL::CStringT<BaseType,StringTraits> &ATL::CStringT<BaseType,StringTraits>::operator +=(const wchar_t *)'
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 인수 목록 '(CString, _bstr_t)'을(를) 일치시키는 동안
+         MyButton.cpp
+         MyComm.cpp
+         MyInverseKinematic.cpp
+     1>c:\users\jeonguk\desktop\robotarms_0515 (2)\robotarms\MyInverseKinematic.h(81): warning C4305: '초기화 중' : 'double'에서 'float'(으)로 잘립니다.
+     1>c:\users\jeonguk\desktop\robotarms_0515 (2)\robotarms\MyInverseKinematic.h(82): warning C4305: '초기화 중' : 'double'에서 'float'(으)로 잘립니다.
+     1>c:\users\jeonguk\desktop\robotarms_0515 (2)\robotarms\MyInverseKinematic.h(99): error C2440: '초기화 중' : 'const char [1]'에서 'ATL::CStringT<BaseType,StringTraits>'(으)로 변환할 수 없습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 class 'ATL::CStringT<BaseType,StringTraits>'의 생성자가 'explicit'으로 선언되었습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+     1>c:\users\jeonguk\desktop\robotarms_0515 (2)\robotarms\MyInverseKinematic.h(100): error C2440: '초기화 중' : 'const char [1]'에서 'ATL::CStringT<BaseType,StringTraits>'(으)로 변환할 수 없습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 class 'ATL::CStringT<BaseType,StringTraits>'의 생성자가 'explicit'으로 선언되었습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+     1>c:\users\jeonguk\desktop\robotarms_0515 (2)\robotarms\MyInverseKinematic.h(101): error C2440: '초기화 중' : 'const char [1]'에서 'ATL::CStringT<BaseType,StringTraits>'(으)로 변환할 수 없습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 class 'ATL::CStringT<BaseType,StringTraits>'의 생성자가 'explicit'으로 선언되었습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+     1>c:\users\jeonguk\desktop\robotarms_0515 (2)\robotarms\MyInverseKinematic.h(102): error C2440: '초기화 중' : 'const char [1]'에서 'ATL::CStringT<BaseType,StringTraits>'(으)로 변환할 수 없습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 class 'ATL::CStringT<BaseType,StringTraits>'의 생성자가 'explicit'으로 선언되었습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+     1>MyInverseKinematic.cpp(12): warning C4244: '초기화 중' : 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>MyInverseKinematic.cpp(22): warning C4244: '초기화 중' : 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>MyInverseKinematic.cpp(23): warning C4244: '초기화 중' : 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>MyInverseKinematic.cpp(26): warning C4244: '초기화 중' : 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>MyInverseKinematic.cpp(37): warning C4244: '초기화 중' : 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>MyInverseKinematic.cpp(43): warning C4244: '초기화 중' : 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>MyInverseKinematic.cpp(46): warning C4244: '초기화 중' : 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>MyInverseKinematic.cpp(48): warning C4244: '초기화 중' : 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>MyInverseKinematic.cpp(49): warning C4244: '초기화 중' : 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>MyInverseKinematic.cpp(56): warning C4244: '초기화 중' : 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>MyInverseKinematic.cpp(57): warning C4244: '초기화 중' : 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>MyInverseKinematic.cpp(58): warning C4244: '초기화 중' : 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>MyInverseKinematic.cpp(59): warning C4244: '초기화 중' : 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>MyInverseKinematic.cpp(63): error C2665: 'AfxMessageBox' : 2개의 오버로드 중 모든 인수 형식을 변환할 수 있는 오버로드가 없습니다.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\atlmfc\include\afxwin.h(6699): 'int AfxMessageBox(LPCTSTR,UINT,UINT)'일 수 있습니다.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\atlmfc\include\afxwin.h(6701): 또는       'int AfxMessageBox(UINT,UINT,UINT)'
+                 인수 목록 '(const char [13])'을(를) 일치시키는 동안
+     1>MyInverseKinematic.cpp(67): error C2664: 'void ATL::CStringT<BaseType,StringTraits>::Format(const wchar_t *,...)' : 매개 변수 1을(를) 'const char [4]'에서 'const wchar_t *'(으)로 변환할 수 없습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+     1>MyInverseKinematic.cpp(68): error C2664: 'void ATL::CStringT<BaseType,StringTraits>::Format(const wchar_t *,...)' : 매개 변수 1을(를) 'const char [4]'에서 'const wchar_t *'(으)로 변환할 수 없습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+     1>MyInverseKinematic.cpp(69): error C2664: 'void ATL::CStringT<BaseType,StringTraits>::Format(const wchar_t *,...)' : 매개 변수 1을(를) 'const char [4]'에서 'const wchar_t *'(으)로 변환할 수 없습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+     1>MyInverseKinematic.cpp(70): error C2664: 'void ATL::CStringT<BaseType,StringTraits>::Format(const wchar_t *,...)' : 매개 변수 1을(를) 'const char [4]'에서 'const wchar_t *'(으)로 변환할 수 없습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+     1>MyInverseKinematic.cpp(74): error C2678: 이항 '+' : 왼쪽 피연산자로 'const char [3]' 형식을 사용하는 연산자가 없거나 허용되는 변환이 없습니다.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\atlmfc\include\atlsimpstr.h(669): 'ATL::CSimpleStringT<BaseType,t_bMFCDLL> ATL::CSimpleStringT<BaseType,t_bMFCDLL>::operator +(const ATL::CSimpleStringT<BaseType,t_bMFCDLL> &,const ATL::CSimpleStringT<BaseType,t_bMFCDLL> &)'일 수 있습니다(인수 종속성을 조회하여 발견).
+                 with
+                 [
+                     BaseType=wchar_t,
+                     t_bMFCDLL=true
+                 ]
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\atlmfc\include\atlsimpstr.h(680): 또는       'ATL::CSimpleStringT<BaseType,t_bMFCDLL> ATL::CSimpleStringT<BaseType,t_bMFCDLL>::operator +(const ATL::CSimpleStringT<BaseType,t_bMFCDLL> &,const wchar_t *)'[인수 종속성을 조회하여 발견)
+                 with
+                 [
+                     BaseType=wchar_t,
+                     t_bMFCDLL=true
+                 ]
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\atlmfc\include\atlsimpstr.h(691): 또는       'ATL::CSimpleStringT<BaseType,t_bMFCDLL> ATL::CSimpleStringT<BaseType,t_bMFCDLL>::operator +(const wchar_t *,const ATL::CSimpleStringT<BaseType,t_bMFCDLL> &)'[인수 종속성을 조회하여 발견)
+                 with
+                 [
+                     BaseType=wchar_t,
+                     t_bMFCDLL=true
+                 ]
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\atlmfc\include\cstringt.h(2289): 또는       'ATL::CStringT<BaseType,StringTraits> ATL::CStringT<BaseType,StringTraits>::operator +(const ATL::CStringT<BaseType,StringTraits> &,const ATL::CStringT<BaseType,StringTraits> &)'[인수 종속성을 조회하여 발견)
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\atlmfc\include\cstringt.h(2300): 또는       'ATL::CStringT<BaseType,StringTraits> ATL::operator +(const ATL::CStringT<BaseType,StringTraits> &,const wchar_t *)'[인수 종속성을 조회하여 발견)
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\atlmfc\include\cstringt.h(2311): 또는       'ATL::CStringT<BaseType,StringTraits> ATL::operator +(const wchar_t *,const ATL::CStringT<BaseType,StringTraits> &)'[인수 종속성을 조회하여 발견)
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\atlmfc\include\cstringt.h(2328): 또는       'ATL::CStringT<BaseType,StringTraits> ATL::CStringT<BaseType,StringTraits>::operator +(const ATL::CStringT<BaseType,StringTraits> &,char)'[인수 종속성을 조회하여 발견)
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\atlmfc\include\cstringt.h(2340): 또는       'ATL::CStringT<BaseType,StringTraits> ATL::CStringT<BaseType,StringTraits>::operator +(char,const ATL::CStringT<BaseType,StringTraits> &)'[인수 종속성을 조회하여 발견)
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\atlmfc\include\cstringt.h(2353): 또는       'ATL::CStringT<BaseType,StringTraits> ATL::CStringT<BaseType,StringTraits>::operator +(const ATL::CStringT<BaseType,StringTraits> &,wchar_t)'[인수 종속성을 조회하여 발견)
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\atlmfc\include\cstringt.h(2365): 또는       'ATL::CStringT<BaseType,StringTraits> ATL::CStringT<BaseType,StringTraits>::operator +(wchar_t,const ATL::CStringT<BaseType,StringTraits> &)'[인수 종속성을 조회하여 발견)
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\comutil.h(173): 또는       '_bstr_t operator +(const char *,const _bstr_t &)'
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\comutil.h(174): 또는       '_bstr_t operator +(const wchar_t *,const _bstr_t &)'
+                 인수 목록 '(const char [3], CString)'을(를) 일치시키는 동안
+     1>MyInverseKinematic.cpp(86): warning C4244: '초기화 중' : 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>MyInverseKinematic.cpp(96): warning C4244: '초기화 중' : 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>MyInverseKinematic.cpp(97): warning C4244: '초기화 중' : 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>MyInverseKinematic.cpp(100): warning C4244: '초기화 중' : 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>MyInverseKinematic.cpp(111): warning C4244: '초기화 중' : 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>MyInverseKinematic.cpp(117): warning C4244: '초기화 중' : 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>MyInverseKinematic.cpp(120): warning C4244: '초기화 중' : 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>MyInverseKinematic.cpp(122): warning C4244: '초기화 중' : 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>MyInverseKinematic.cpp(123): warning C4244: '초기화 중' : 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>MyInverseKinematic.cpp(130): warning C4244: '초기화 중' : 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>MyInverseKinematic.cpp(131): warning C4244: '초기화 중' : 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>MyInverseKinematic.cpp(132): warning C4244: '초기화 중' : 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>MyInverseKinematic.cpp(133): warning C4244: '초기화 중' : 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>MyInverseKinematic.cpp(137): error C2665: 'AfxMessageBox' : 2개의 오버로드 중 모든 인수 형식을 변환할 수 있는 오버로드가 없습니다.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\atlmfc\include\afxwin.h(6699): 'int AfxMessageBox(LPCTSTR,UINT,UINT)'일 수 있습니다.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\atlmfc\include\afxwin.h(6701): 또는       'int AfxMessageBox(UINT,UINT,UINT)'
+                 인수 목록 '(const char [13])'을(를) 일치시키는 동안
+     1>MyInverseKinematic.cpp(141): error C2664: 'void ATL::CStringT<BaseType,StringTraits>::Format(const wchar_t *,...)' : 매개 변수 1을(를) 'const char [4]'에서 'const wchar_t *'(으)로 변환할 수 없습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+     1>MyInverseKinematic.cpp(142): error C2664: 'void ATL::CStringT<BaseType,StringTraits>::Format(const wchar_t *,...)' : 매개 변수 1을(를) 'const char [4]'에서 'const wchar_t *'(으)로 변환할 수 없습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+     1>MyInverseKinematic.cpp(143): error C2664: 'void ATL::CStringT<BaseType,StringTraits>::Format(const wchar_t *,...)' : 매개 변수 1을(를) 'const char [4]'에서 'const wchar_t *'(으)로 변환할 수 없습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+     1>MyInverseKinematic.cpp(144): error C2664: 'void ATL::CStringT<BaseType,StringTraits>::Format(const wchar_t *,...)' : 매개 변수 1을(를) 'const char [4]'에서 'const wchar_t *'(으)로 변환할 수 없습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+     1>MyInverseKinematic.cpp(148): error C2678: 이항 '+' : 왼쪽 피연산자로 'const char [3]' 형식을 사용하는 연산자가 없거나 허용되는 변환이 없습니다.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\atlmfc\include\atlsimpstr.h(669): 'ATL::CSimpleStringT<BaseType,t_bMFCDLL> ATL::CSimpleStringT<BaseType,t_bMFCDLL>::operator +(const ATL::CSimpleStringT<BaseType,t_bMFCDLL> &,const ATL::CSimpleStringT<BaseType,t_bMFCDLL> &)'일 수 있습니다(인수 종속성을 조회하여 발견).
+                 with
+                 [
+                     BaseType=wchar_t,
+                     t_bMFCDLL=true
+                 ]
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\atlmfc\include\atlsimpstr.h(680): 또는       'ATL::CSimpleStringT<BaseType,t_bMFCDLL> ATL::CSimpleStringT<BaseType,t_bMFCDLL>::operator +(const ATL::CSimpleStringT<BaseType,t_bMFCDLL> &,const wchar_t *)'[인수 종속성을 조회하여 발견)
+                 with
+                 [
+                     BaseType=wchar_t,
+                     t_bMFCDLL=true
+                 ]
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\atlmfc\include\atlsimpstr.h(691): 또는       'ATL::CSimpleStringT<BaseType,t_bMFCDLL> ATL::CSimpleStringT<BaseType,t_bMFCDLL>::operator +(const wchar_t *,const ATL::CSimpleStringT<BaseType,t_bMFCDLL> &)'[인수 종속성을 조회하여 발견)
+                 with
+                 [
+                     BaseType=wchar_t,
+                     t_bMFCDLL=true
+                 ]
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\atlmfc\include\cstringt.h(2289): 또는       'ATL::CStringT<BaseType,StringTraits> ATL::CStringT<BaseType,StringTraits>::operator +(const ATL::CStringT<BaseType,StringTraits> &,const ATL::CStringT<BaseType,StringTraits> &)'[인수 종속성을 조회하여 발견)
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\atlmfc\include\cstringt.h(2300): 또는       'ATL::CStringT<BaseType,StringTraits> ATL::operator +(const ATL::CStringT<BaseType,StringTraits> &,const wchar_t *)'[인수 종속성을 조회하여 발견)
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\atlmfc\include\cstringt.h(2311): 또는       'ATL::CStringT<BaseType,StringTraits> ATL::operator +(const wchar_t *,const ATL::CStringT<BaseType,StringTraits> &)'[인수 종속성을 조회하여 발견)
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\atlmfc\include\cstringt.h(2328): 또는       'ATL::CStringT<BaseType,StringTraits> ATL::CStringT<BaseType,StringTraits>::operator +(const ATL::CStringT<BaseType,StringTraits> &,char)'[인수 종속성을 조회하여 발견)
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\atlmfc\include\cstringt.h(2340): 또는       'ATL::CStringT<BaseType,StringTraits> ATL::CStringT<BaseType,StringTraits>::operator +(char,const ATL::CStringT<BaseType,StringTraits> &)'[인수 종속성을 조회하여 발견)
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\atlmfc\include\cstringt.h(2353): 또는       'ATL::CStringT<BaseType,StringTraits> ATL::CStringT<BaseType,StringTraits>::operator +(const ATL::CStringT<BaseType,StringTraits> &,wchar_t)'[인수 종속성을 조회하여 발견)
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\atlmfc\include\cstringt.h(2365): 또는       'ATL::CStringT<BaseType,StringTraits> ATL::CStringT<BaseType,StringTraits>::operator +(wchar_t,const ATL::CStringT<BaseType,StringTraits> &)'[인수 종속성을 조회하여 발견)
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\comutil.h(173): 또는       '_bstr_t operator +(const char *,const _bstr_t &)'
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\comutil.h(174): 또는       '_bstr_t operator +(const wchar_t *,const _bstr_t &)'
+                 인수 목록 '(const char [3], CString)'을(를) 일치시키는 동안
+     1>MyInverseKinematic.cpp(170): warning C4244: 'return' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+         RevisionPageOne.cpp
+     1>RevisionPageOne.cpp(41): error C2664: 'CWnd::SetWindowTextW' : 매개 변수 1을(를) 'const char [25]'에서 'LPCTSTR'(으)로 변환할 수 없습니다.
+                 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+         RevisionPageThree.cpp
+     1>RevisionPageThree.cpp(39): error C2664: 'CWnd::SetWindowTextW' : 매개 변수 1을(를) 'const char [25]'에서 'LPCTSTR'(으)로 변환할 수 없습니다.
+                 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+         RevisionPageTwo.cpp
+     1>c:\users\jeonguk\desktop\robotarms_0515 (2)\robotarms\MyInverseKinematic.h(81): warning C4305: '초기화 중' : 'double'에서 'float'(으)로 잘립니다.
+     1>c:\users\jeonguk\desktop\robotarms_0515 (2)\robotarms\MyInverseKinematic.h(82): warning C4305: '초기화 중' : 'double'에서 'float'(으)로 잘립니다.
+     1>c:\users\jeonguk\desktop\robotarms_0515 (2)\robotarms\MyInverseKinematic.h(99): error C2440: '초기화 중' : 'const char [1]'에서 'ATL::CStringT<BaseType,StringTraits>'(으)로 변환할 수 없습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 class 'ATL::CStringT<BaseType,StringTraits>'의 생성자가 'explicit'으로 선언되었습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+     1>c:\users\jeonguk\desktop\robotarms_0515 (2)\robotarms\MyInverseKinematic.h(100): error C2440: '초기화 중' : 'const char [1]'에서 'ATL::CStringT<BaseType,StringTraits>'(으)로 변환할 수 없습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 class 'ATL::CStringT<BaseType,StringTraits>'의 생성자가 'explicit'으로 선언되었습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+     1>c:\users\jeonguk\desktop\robotarms_0515 (2)\robotarms\MyInverseKinematic.h(101): error C2440: '초기화 중' : 'const char [1]'에서 'ATL::CStringT<BaseType,StringTraits>'(으)로 변환할 수 없습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 class 'ATL::CStringT<BaseType,StringTraits>'의 생성자가 'explicit'으로 선언되었습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+     1>c:\users\jeonguk\desktop\robotarms_0515 (2)\robotarms\MyInverseKinematic.h(102): error C2440: '초기화 중' : 'const char [1]'에서 'ATL::CStringT<BaseType,StringTraits>'(으)로 변환할 수 없습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 class 'ATL::CStringT<BaseType,StringTraits>'의 생성자가 'explicit'으로 선언되었습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+     1>RevisionPageTwo.cpp(58): error C2664: 'CWnd::SetWindowTextW' : 매개 변수 1을(를) 'const char [25]'에서 'LPCTSTR'(으)로 변환할 수 없습니다.
+                 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+     1>RevisionPageTwo.cpp(164): warning C4244: '인수' : 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>RevisionPageTwo.cpp(167): error C2664: 'void ATL::CStringT<BaseType,StringTraits>::Format(const wchar_t *,...)' : 매개 변수 1을(를) 'const char [5]'에서 'const wchar_t *'(으)로 변환할 수 없습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+     1>RevisionPageTwo.cpp(168): error C2664: 'void ATL::CStringT<BaseType,StringTraits>::Format(const wchar_t *,...)' : 매개 변수 1을(를) 'const char [5]'에서 'const wchar_t *'(으)로 변환할 수 없습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+     1>RevisionPageTwo.cpp(169): error C2664: 'void ATL::CStringT<BaseType,StringTraits>::Format(const wchar_t *,...)' : 매개 변수 1을(를) 'const char [5]'에서 'const wchar_t *'(으)로 변환할 수 없습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+     1>RevisionPageTwo.cpp(193): error C2664: 'void ATL::CStringT<BaseType,StringTraits>::Format(const wchar_t *,...)' : 매개 변수 1을(를) 'const char [5]'에서 'const wchar_t *'(으)로 변환할 수 없습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+     1>RevisionPageTwo.cpp(199): error C2664: 'void ATL::CStringT<BaseType,StringTraits>::Format(const wchar_t *,...)' : 매개 변수 1을(를) 'const char [5]'에서 'const wchar_t *'(으)로 변환할 수 없습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+     1>RevisionPageTwo.cpp(205): error C2664: 'void ATL::CStringT<BaseType,StringTraits>::Format(const wchar_t *,...)' : 매개 변수 1을(를) 'const char [5]'에서 'const wchar_t *'(으)로 변환할 수 없습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+     1>RevisionPageTwo.cpp(241): error C2664: 'void ATL::CStringT<BaseType,StringTraits>::Format(const wchar_t *,...)' : 매개 변수 1을(를) 'const char [3]'에서 'const wchar_t *'(으)로 변환할 수 없습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+     1>RevisionPageTwo.cpp(242): error C2039: 'SetWindowTextA' : 'CWnd'의 멤버가 아닙니다.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\atlmfc\include\afxwin.h(2286) : 'CWnd' 선언을 참조하십시오.
+         RobotArms.cpp
+         RobotArmsDlg.cpp
+     1>c:\users\jeonguk\desktop\robotarms_0515 (2)\robotarms\MyInverseKinematic.h(81): warning C4305: '초기화 중' : 'double'에서 'float'(으)로 잘립니다.
+     1>c:\users\jeonguk\desktop\robotarms_0515 (2)\robotarms\MyInverseKinematic.h(82): warning C4305: '초기화 중' : 'double'에서 'float'(으)로 잘립니다.
+     1>c:\users\jeonguk\desktop\robotarms_0515 (2)\robotarms\MyInverseKinematic.h(99): error C2440: '초기화 중' : 'const char [1]'에서 'ATL::CStringT<BaseType,StringTraits>'(으)로 변환할 수 없습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 class 'ATL::CStringT<BaseType,StringTraits>'의 생성자가 'explicit'으로 선언되었습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+     1>c:\users\jeonguk\desktop\robotarms_0515 (2)\robotarms\MyInverseKinematic.h(100): error C2440: '초기화 중' : 'const char [1]'에서 'ATL::CStringT<BaseType,StringTraits>'(으)로 변환할 수 없습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 class 'ATL::CStringT<BaseType,StringTraits>'의 생성자가 'explicit'으로 선언되었습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+     1>c:\users\jeonguk\desktop\robotarms_0515 (2)\robotarms\MyInverseKinematic.h(101): error C2440: '초기화 중' : 'const char [1]'에서 'ATL::CStringT<BaseType,StringTraits>'(으)로 변환할 수 없습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 class 'ATL::CStringT<BaseType,StringTraits>'의 생성자가 'explicit'으로 선언되었습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+     1>c:\users\jeonguk\desktop\robotarms_0515 (2)\robotarms\MyInverseKinematic.h(102): error C2440: '초기화 중' : 'const char [1]'에서 'ATL::CStringT<BaseType,StringTraits>'(으)로 변환할 수 없습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 class 'ATL::CStringT<BaseType,StringTraits>'의 생성자가 'explicit'으로 선언되었습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+     1>RobotArmsDlg.cpp(218): error C2664: 'CListBox::AddString' : 매개 변수 1을(를) 'const char [14]'에서 'LPCTSTR'(으)로 변환할 수 없습니다.
+                 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+     1>RobotArmsDlg.cpp(243): error C2664: 'CListBox::AddString' : 매개 변수 1을(를) 'const char [20]'에서 'LPCTSTR'(으)로 변환할 수 없습니다.
+                 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+     1>RobotArmsDlg.cpp(267): error C2664: 'CListBox::AddString' : 매개 변수 1을(를) 'const char [21]'에서 'LPCTSTR'(으)로 변환할 수 없습니다.
+                 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+     1>RobotArmsDlg.cpp(290): error C2664: 'CListBox::AddString' : 매개 변수 1을(를) 'const char [17]'에서 'LPCTSTR'(으)로 변환할 수 없습니다.
+                 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+     1>RobotArmsDlg.cpp(313): error C2664: 'CListBox::AddString' : 매개 변수 1을(를) 'const char [15]'에서 'LPCTSTR'(으)로 변환할 수 없습니다.
+                 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+     1>RobotArmsDlg.cpp(336): error C2664: 'CListBox::AddString' : 매개 변수 1을(를) 'const char [13]'에서 'LPCTSTR'(으)로 변환할 수 없습니다.
+                 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+     1>RobotArmsDlg.cpp(358): error C2664: 'CListBox::AddString' : 매개 변수 1을(를) 'const char [21]'에서 'LPCTSTR'(으)로 변환할 수 없습니다.
+                 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+     1>RobotArmsDlg.cpp(379): error C2664: 'CListBox::AddString' : 매개 변수 1을(를) 'const char [17]'에서 'LPCTSTR'(으)로 변환할 수 없습니다.
+                 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+     1>RobotArmsDlg.cpp(403): error C2664: 'CListBox::AddString' : 매개 변수 1을(를) 'const char [13]'에서 'LPCTSTR'(으)로 변환할 수 없습니다.
+                 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+     1>RobotArmsDlg.cpp(426): error C2664: 'CListBox::AddString' : 매개 변수 1을(를) 'const char [14]'에서 'LPCTSTR'(으)로 변환할 수 없습니다.
+                 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+     1>RobotArmsDlg.cpp(449): error C2664: 'CListBox::AddString' : 매개 변수 1을(를) 'const char [21]'에서 'LPCTSTR'(으)로 변환할 수 없습니다.
+                 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+     1>RobotArmsDlg.cpp(471): error C2664: 'CListBox::AddString' : 매개 변수 1을(를) 'const char [19]'에서 'LPCTSTR'(으)로 변환할 수 없습니다.
+                 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+         serialcomdlg.CPP
+     1>c:\users\jeonguk\desktop\robotarms_0515 (2)\robotarms\MyInverseKinematic.h(81): warning C4305: '초기화 중' : 'double'에서 'float'(으)로 잘립니다.
+     1>c:\users\jeonguk\desktop\robotarms_0515 (2)\robotarms\MyInverseKinematic.h(82): warning C4305: '초기화 중' : 'double'에서 'float'(으)로 잘립니다.
+     1>c:\users\jeonguk\desktop\robotarms_0515 (2)\robotarms\MyInverseKinematic.h(99): error C2440: '초기화 중' : 'const char [1]'에서 'ATL::CStringT<BaseType,StringTraits>'(으)로 변환할 수 없습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 class 'ATL::CStringT<BaseType,StringTraits>'의 생성자가 'explicit'으로 선언되었습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+     1>c:\users\jeonguk\desktop\robotarms_0515 (2)\robotarms\MyInverseKinematic.h(100): error C2440: '초기화 중' : 'const char [1]'에서 'ATL::CStringT<BaseType,StringTraits>'(으)로 변환할 수 없습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 class 'ATL::CStringT<BaseType,StringTraits>'의 생성자가 'explicit'으로 선언되었습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+     1>c:\users\jeonguk\desktop\robotarms_0515 (2)\robotarms\MyInverseKinematic.h(101): error C2440: '초기화 중' : 'const char [1]'에서 'ATL::CStringT<BaseType,StringTraits>'(으)로 변환할 수 없습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 class 'ATL::CStringT<BaseType,StringTraits>'의 생성자가 'explicit'으로 선언되었습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+     1>c:\users\jeonguk\desktop\robotarms_0515 (2)\robotarms\MyInverseKinematic.h(102): error C2440: '초기화 중' : 'const char [1]'에서 'ATL::CStringT<BaseType,StringTraits>'(으)로 변환할 수 없습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 class 'ATL::CStringT<BaseType,StringTraits>'의 생성자가 'explicit'으로 선언되었습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+     1>serialcomdlg.CPP(81): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
+         SettingPageOne.cpp
+     1>SettingPageOne.cpp(41): error C2664: 'CWnd::SetWindowTextW' : 매개 변수 1을(를) 'const char [25]'에서 'LPCTSTR'(으)로 변환할 수 없습니다.
+                 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+         SettingPageThree.cpp
+     1>SettingPageThree.cpp(40): error C2664: 'CWnd::SetWindowTextW' : 매개 변수 1을(를) 'const char [25]'에서 'LPCTSTR'(으)로 변환할 수 없습니다.
+                 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+     1>SettingPageThree.cpp(131): error C2665: 'AfxMessageBox' : 2개의 오버로드 중 모든 인수 형식을 변환할 수 있는 오버로드가 없습니다.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\atlmfc\include\afxwin.h(6699): 'int AfxMessageBox(LPCTSTR,UINT,UINT)'일 수 있습니다.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\atlmfc\include\afxwin.h(6701): 또는       'int AfxMessageBox(UINT,UINT,UINT)'
+                 인수 목록 '(const char [7])'을(를) 일치시키는 동안
+         SettingPageTwo.cpp
+     1>c:\users\jeonguk\desktop\robotarms_0515 (2)\robotarms\MyInverseKinematic.h(81): warning C4305: '초기화 중' : 'double'에서 'float'(으)로 잘립니다.
+     1>c:\users\jeonguk\desktop\robotarms_0515 (2)\robotarms\MyInverseKinematic.h(82): warning C4305: '초기화 중' : 'double'에서 'float'(으)로 잘립니다.
+     1>c:\users\jeonguk\desktop\robotarms_0515 (2)\robotarms\MyInverseKinematic.h(99): error C2440: '초기화 중' : 'const char [1]'에서 'ATL::CStringT<BaseType,StringTraits>'(으)로 변환할 수 없습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 class 'ATL::CStringT<BaseType,StringTraits>'의 생성자가 'explicit'으로 선언되었습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+     1>c:\users\jeonguk\desktop\robotarms_0515 (2)\robotarms\MyInverseKinematic.h(100): error C2440: '초기화 중' : 'const char [1]'에서 'ATL::CStringT<BaseType,StringTraits>'(으)로 변환할 수 없습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 class 'ATL::CStringT<BaseType,StringTraits>'의 생성자가 'explicit'으로 선언되었습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+     1>c:\users\jeonguk\desktop\robotarms_0515 (2)\robotarms\MyInverseKinematic.h(101): error C2440: '초기화 중' : 'const char [1]'에서 'ATL::CStringT<BaseType,StringTraits>'(으)로 변환할 수 없습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 class 'ATL::CStringT<BaseType,StringTraits>'의 생성자가 'explicit'으로 선언되었습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+     1>c:\users\jeonguk\desktop\robotarms_0515 (2)\robotarms\MyInverseKinematic.h(102): error C2440: '초기화 중' : 'const char [1]'에서 'ATL::CStringT<BaseType,StringTraits>'(으)로 변환할 수 없습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 class 'ATL::CStringT<BaseType,StringTraits>'의 생성자가 'explicit'으로 선언되었습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+     1>SettingPageTwo.cpp(65): error C2664: 'CWnd::SetWindowTextW' : 매개 변수 1을(를) 'const char [25]'에서 'LPCTSTR'(으)로 변환할 수 없습니다.
+                 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+     1>SettingPageTwo.cpp(92): warning C4244: '인수' : 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>SettingPageTwo.cpp(94): error C2664: 'void ATL::CStringT<BaseType,StringTraits>::Format(const wchar_t *,...)' : 매개 변수 1을(를) 'const char [5]'에서 'const wchar_t *'(으)로 변환할 수 없습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+     1>SettingPageTwo.cpp(95): error C2664: 'void ATL::CStringT<BaseType,StringTraits>::Format(const wchar_t *,...)' : 매개 변수 1을(를) 'const char [5]'에서 'const wchar_t *'(으)로 변환할 수 없습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+     1>SettingPageTwo.cpp(96): error C2664: 'void ATL::CStringT<BaseType,StringTraits>::Format(const wchar_t *,...)' : 매개 변수 1을(를) 'const char [5]'에서 'const wchar_t *'(으)로 변환할 수 없습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+     1>SettingPageTwo.cpp(121): error C2664: 'void ATL::CStringT<BaseType,StringTraits>::Format(const wchar_t *,...)' : 매개 변수 1을(를) 'const char [5]'에서 'const wchar_t *'(으)로 변환할 수 없습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+     1>SettingPageTwo.cpp(127): error C2664: 'void ATL::CStringT<BaseType,StringTraits>::Format(const wchar_t *,...)' : 매개 변수 1을(를) 'const char [5]'에서 'const wchar_t *'(으)로 변환할 수 없습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+     1>SettingPageTwo.cpp(133): error C2664: 'void ATL::CStringT<BaseType,StringTraits>::Format(const wchar_t *,...)' : 매개 변수 1을(를) 'const char [5]'에서 'const wchar_t *'(으)로 변환할 수 없습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+     1>SettingPageTwo.cpp(167): error C2664: 'void ATL::CStringT<BaseType,StringTraits>::Format(const wchar_t *,...)' : 매개 변수 1을(를) 'const char [3]'에서 'const wchar_t *'(으)로 변환할 수 없습니다.
+                 with
+                 [
+                     BaseType=wchar_t,
+                     StringTraits=StrTraitMFC_DLL<wchar_t>
+                 ]
+                 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+     1>SettingPageTwo.cpp(168): error C2039: 'SetWindowTextA' : 'CWnd'의 멤버가 아닙니다.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\atlmfc\include\afxwin.h(2286) : 'CWnd' 선언을 참조하십시오.
+     1>"C:\Users\JeongUk\Desktop\RobotArms_0515 (2)\RobotArms\RobotArms.vcxproj" 프로젝트를 빌드했습니다(build 대상). - 실패
+
+빌드하지 못했습니다.
+
+경과 시간: 00:00:03.15
